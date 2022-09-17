@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical Document Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav id="navbar">
+  <header><h1>Welcome to Python!</h1></header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+    <li><a class="nav-link" href="#Data_Type">Data Type</a></li>
+    <li><a class="nav-link" href="#Variable">Variable</a></li>
+    <li><a class="nav-link" href="#If_Else_Statement">If Else Statement</a></li>
+    <li><a class="nav-link" href="#While_Statement">While Statement</a></li>
+    <li><a class="nav-link" href="#Reference">Reference</a></li>
+  </ul>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header><h2>Introduction</h2></header>
+      <p>Python is a powerful programming language for general multiple purpose. Many researchers utilize its great and special features to conduct data analysis, machine and deep learning, web and app development which are all beneficial to improvement and development of sciecne and technology. According to stackoverflow survey in 2020, python rank the top five in terms of popularity and the largest portion of population in programming community intend to learn Python than other languages in the future for their interest and jobs. From these results, Python is proved to be fundamental and potential for developers and scientists. For the sake of the better society and improvement of individual ability, it is recommended to start learning Python and here is some guidelines for you!</p>
+  </section>
+
+  <section class="main-section" id="Hello_World">
+    <header><h2>Hello World</h2></header>
+    <p>Before drilling into the deep content, the first step of learning is to get a taste of your IDE or code editor by playing around with Hello World statement. Below is the code for Python to execute such that Hello World is appeared in the IDE result grid.</p>
+    <div class="code-environment">
+      <code>print("Hello World")</code>
+    </div>
+  </section>
+
+  <section class="main-section" id="Data_Type">
+    <header><h2>Data Type</h2></header>
+    <p>There are several Python data types. For this beginner-friendly document page, only primitive types and container types will be introduced as follow. Former list is the examples for primitive types and latter list is the examples for container types.</p>
+    <ul>
+      <li>Integer e.g. 314</li>
+      <li>Float   e.g. 2.71828</li>
+      <li>String  e.g. "Mathematics"</li>
+      <li>Boolean e.g. True, False</li>
+      <li>None</li>
+    </ul>
+
+    <ul style="list-style-type: square;">
+      <li>List e.g. [1, 2, "King of Science", "Queen of Science", 3.141592653, 2.71828, e]</li>
+      <li>Tuple e.g. (True, False, "LIST IS FUN", "tuple_is_good")</li>
+      <li>Dictionary e.g. {"Name" : "Hung", "Education": "HKUST", "Major": "Mathematics", "Minor": "Physics"}</li>
+    </ul>
+  </section>
+
+  <section class="main-section" id="Variable">
+    <header><h2>Variable</h2></header>
+    <p>Variables are powerful in Python. They help storing information (in other term: data) and performing several operations such as while loop controls and update the calculation result. Information/data stored in the variable is regarded as value. Any data types of Python such as integer float, string, list, tuple, dictionary can be stored in the variable as value.</p>
+    <h4>Create Variable</h4>
+    <p>
+      While creating variable, there are some rules that you should strictly follow. Otherwise, variable cannot be created and some errors appear regarding the name of it. All the rules are shown below.
+    </p>
+
+    <ul>
+      <li>Variable name can be in short such as <code>x</code>, <code>y</code>, <code>z</code></li>
+      <li>Variable name can be in descriptive form such as <code>my_favourite_subject</code>, <code>the_3_mathematicians</code>, <code>Python_is_great_and_amazing</code></li>
+      <li>A variable name must start with lowercase character, uppercase character or underscore character<code>_</code></li>. It CANNOT start with a number e.g. <code>3</code>.
+      <li>A variable name can only contain lower, upper letters and underscore character. <code>a</code>-<code>z</code>, <code>A</code>-<code>Z</code>, <code>_</code></li>
+      <li>A variable name is case-sensitive. <code>math</code>, <code>matH</code>, <code>Math</code>, <code>MaTh</code>, <code>MATH</code> are all different variables.</li>
+    </ul>
+
+    <p>
+      Apart from the rules of creation, the step of defining variable is to start with creating a variable name, then use an assignment operator <code>=</code> connect the value you would like to store. For example, <div><code>MyName = "HUNG"<br><br>His_univ = "HKUST"</code></div>which store the strings into the two variable respectively. 
+    </p>
+    <p>
+      You can also reassign a value to a variable but the old value within that variable will be totally replaced. For example, reassign my name, <div><code>MyName = "SIMON"</code></div> "HUNG" will be replaced by "SIMON". 
+    </p>
+    <p>
+      One single line statement can be used to define multiple variables. For example, <div class="code-font"><code class="code-font"> MyName, What_University, Major = "HUNG", "HKUST", "Mathematics"</code></div> This one line stores "HUNG", "HKUST" and "Mathematics" into corresponding variables. 
+    </p>
+    <p>
+      Multiple variables can also point to the same value and store the same value in one line statement. For example, <div class="code-font"><code class="code-font">MyName1 = MyName2 = MyName3 = "SIMON"</code></div>This one line code use the assignment operator as a chain, connecting three variables to the same value string "SIMON". 
+    </p>
+    <p>
+      In many cases, update of a variable is crucial to operation of computer programming. This even plays an important role in developing different kinds of mathematical and computer model to solve and analyze real world problem. Therefore, it is an essential skill to learn. Apart from pointing the variable to a new value, the original old value within it itself can be used to update by combining with some operators. For example,           
+      <div>
+        <code>number = 10<br><br>number = number operator 7<br><br>print(number)</code>
+      </div>
+The above block of code has the following meaning: First define number is equal to 10. Then use this number combine a operator, can be <code>+</code>, <code>-</code>, <code>*</code>, <code>**</code>, <code>/</code>. After the operator, the 7 will be combined with the old value number 10, returning the final number as a result storing in the <code>number</code> variable. The final value shows in the print statement in the final line of code.
+    </p>
+  </section>
+
+  <section class="main-section" id="If_Else_Statement">
+    <header><h2>If Else Statement</h2></header>
+    <p>Programming language has great and powerful features to do branching. Branching means that a block of code statements, which is associated with one or more conditions in the same if line or else line or elif line are evaluated to be true at the same time, will be executed. If there is found that more than one block of statements' conditions are true, the first block of code statement will be executed and other will be ignored.</p>
+    <p>There can be several combinations of <code>if</code>, <code>elif</code>, <code>else</code>. The following will show couple of examples.</p>
+    <div>
+      <code>
+        if condition1:<br><br>
+        <span class="tab">block of statements within if</span><br><br>
+        else:<br><br>
+        <span class="tab">block of statements in else</span>
+      </code>
+    </div>
+
+    <p>
+      In the first example, if Python evaluate the condition1 to be True, then the block of statements within if will be executed. If the condition1 is False, then the block of statements in else will be executed instead of the first block. Apart from this principle, all the blocks with theirs code line statements are indented 4 spaces such that the program will be easier to read and meet the syntax requirement of Python. The next will show the second example.  
+    </p>
+
+    <div>
+      <code>
+        if condition1:<br><br>
+        <span class="tab">block of statements within if</span><br><br>
+        elif condition2:<br><br>
+        <span class="tab">block of statements in elif</span><br><br>
+        else:<br><br>
+        <span class="tab">block of statements in else</span>
+      </code>
+    </div>
+
+    <p>
+      In the second example, if the condition1 is True, then the block associated with if will be executed, the other two will be ignored automatically. If the condition2 is True, other is false, then the block within elif will be executed. Another case is that if all condition1 and condition2 seems to be False, the block within else will be executed. Final situation introduced here is condition1 and condition2 are True, then the first block which starts from the top to the bottom will be prioritized and executed, then escape from this if..elif..else statement and run other codes. Below is the third and final example.
+    </p>
+
+    <div>
+      <code>
+        if condition1 and condition2:<br><br>
+        <span class="tab">block of statements within if</span><br><br>
+        elif condition3 or condition4:<br><br>
+        <span class="tab">block of statements in elif</span><br><br>
+        elif condition5:<br><br>
+        <span class="tab">block of statements in elif</span><br><br>
+        else:<br><br>
+        <span class="tab">block of statements in else</span>
+      </code>
+    </div>
+
+    <p>
+      In this third and final example, if condition1 and condition2 both are correct at the same time, then the block of statements of code within if will be executed. However, <code>and</code> indicates both condition must be True. If one of them is False, the whole expression i.e. <code>condition1 and condition2</code> is equal to False, the whole block within if will not be executed and jump to the next elif block to evaluate other conditions.<code>or</code> indicates one of the conditions must be True such that the whole <code>condition3 or condition4</code> is equal to True. If condition3 or condition4 is True, then the block within that elif will be executed. If condition3 and condition4 are False, the block will not be executed and jump to the next block. If condition5 is True, then return the result of the block of codes within that elif. If condition5 is False, jump to the else block and execute that block of codes.  
+    </p>
+
+
+  </section>
+
+  <section class="main-section" id="While_Statement">
+    <header><h2>While Statement</h2></header>
+    <p>In programming, there exists occassions that block of codes need to be executed repeatedly. In order to repeats codes without copying them several times in the IDE or editor, <code>while</code> statement will do the job with the use of condition as if statement. The following is the structure of while loop: </p>
+    <div>
+      <code>
+        while condition: <br><br>
+        <span class="tab">block of codes</span>
+      </code>
+    </div>
+
+    <p>where the block are indented by 4 spaces as in the if statement.</p>
+    <h4>Infinite Loop</h4>
+    <p>The following example is an infinite loop:</p>
+    <div>
+      <code>
+        while condition: <br><br>
+        <span class="tab">block of codes</span>
+      </code>
+    </div>
+    <p>As the condition is True and no constraints are applied to turn the condition to False, then the block of statement will run forever. Infinite number of results will be returned. The next example will apply those constraints.</p>
+    <h4>Using Variable</h4>
+    <p>This example will define a variable and use as the condition of while statement.</p>
+    <div>
+      <code>
+        i = 1 <br><br>
+        while i &lt; 21: <br><br>
+        <span class="tab">block of codes</span><br><br>
+        <span class="tab">i = i + 1</span>
+      </code>
+    </div>
+    <p>The block of codes will be executed 20 times because the variable i will be increased by 1 when the block is executed one time. The last execution is when i = 20, the block of code executes along with adding 1 to i, becoming i = 21 and turning the while condition from True to False. As a result, the while loop is broken and run the codes below this while loop. The next and the final example is the introduction for <code>break</code> command.</p>
+    <h4>Using Break Command</h4>
+    <p>This is the last example with the use of <code>break</code> command.</p>
+    <div>
+      <code>
+        while condition: <br><br>
+        <span class="tab">block of codes</span><br><br>
+        <span class="tab">break</span>
+      </code>
+    </div>
+    <p>In this example, the block of codes will not be executed infinitely but to be interupted. The condition is True, so the block of codes are executed. After running this block of codes, Python will arrive the line <code>break</code> just below the final line of the block of codes. This break will immediately stop the while loop and straightly jump to the remaining part of the codes below the while loop.</p>
+  </section>
+
+
+  <section class="main-section" id="Reference">
+    <header><h2>Reference</h2></header>
+    <p>The content of this page is conducted and formulated by the ideas of SIMON SIN Chun Hung, <a href="https://jovian.ai/learn/data-analysis-with-python-zero-to-pandas" target="_blank">Jovian courses of Python</a> and the <a href="https://docs.python.org/3/tutorial/" target="_blank">tutorial page of Python</a>.</p>
+  </section>
+</main>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</body>
+</html>
